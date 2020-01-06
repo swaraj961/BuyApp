@@ -1,7 +1,7 @@
 class  ProductModel {
   String name ;
   int price;
-  ProductModel(){
+  ProductModel(String s, [int i]){
     this.name = name ;
     this.price = price;
   }
