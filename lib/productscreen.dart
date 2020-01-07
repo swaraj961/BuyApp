@@ -1,5 +1,7 @@
+
 import 'package:flutter/material.dart';
-import 'package:cartapp/productmodels.dart';
+
+import '../ProductModel.dart';
 
 
 class ProductScreen extends StatelessWidget {
@@ -7,7 +9,7 @@ class ProductScreen extends StatelessWidget {
 
   ProductScreen(this._valueSetter);
 
-  List<ProductModel> products = [
+  final List<ProductModel> products = [
     ProductModel("Mic", 50),
     ProductModel("LED Monitor", 100),
     ProductModel("Mouse", 5),
