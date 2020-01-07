@@ -1,6 +1,9 @@
-# cartapp
+#Simple Cart App 
+- add products and check the price 
+Dowload the test apk -https://drive.google.com/open?id=1tX1L7TMgJOU5yDKqQ_x7elvY4ESoDzF-
 
-A new Flutter project.
+
+- A new Flutter project.
 
 ## Getting Started
 
