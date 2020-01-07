@@ -1,6 +1,6 @@
-import 'package:cartapp/productmodels.dart';
-import 'package:cartapp/checkoutscreen.dart';
-import 'package:cartapp/productscreen.dart';
+import 'package:cartapp/ProductModel.dart';
+import 'package:cartapp/screens/CheckoutScreen.dart';
+import 'package:cartapp/screens/ProductScreen.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -11,10 +11,18 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      
       theme: ThemeData(
-       
-        primarySwatch: Colors.blue,
+        // This is the theme of your application.
+        //
+        // Try running your application with "flutter run". You'll see the
+        // application has a blue toolbar. Then, without quitting the app, try
+        // changing the primarySwatch below to Colors.green and then invoke
+        // "hot reload" (press "r" in the console where you ran "flutter run",
+        // or simply save your changes to "hot reload" in a Flutter IDE).
+        // Notice that the counter didn't reset back to zero; the application
+        // is not restarted.
+        primarySwatch: Colors.orange,
       ),
       home: CartApp()
     );
@@ -37,9 +45,10 @@ class _CartAppState extends State<CartApp> {
       child: Scaffold(
         appBar: AppBar(
           title: Text("Cart App"),
+          centerTitle: true,
           bottom: TabBar(
             tabs: <Widget>[
-              Tab(text: "Products",), 
+              Tab(text: "Products",),
               Tab(text: "Checkout",),
             ],
           ),
@@ -62,3 +71,4 @@ class _CartAppState extends State<CartApp> {
     );
   }
 }
+
